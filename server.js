@@ -7,7 +7,7 @@ const Tesseract = require("tesseract.js");
 const GenerateId = require("./src/utils/generateId");
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect("mongodb://localhost:27017/symbiot", {
+    const conn = await mongoose.connect('mongodb+srv://acahscollege:acahsMongoDb15@acahs.nszkg5f.mongodb.net/ACAHSDATA?retryWrites=true&w=majority', {
       useUnifiedTopology: true,
       useNewUrlParser: true,
     });
