@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXPENDITURE MANAGEMENT</title>
+    <link rel = "icon" href = "logo.jpg" 
+        type = "image/x-icon">
+    <link rel="stylesheet" href="/home.css" />
+    <script src="/uploadImage.js"></script>
+    <script src="/requestor.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse" style="background-color: #385c85;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">EXPENDITURE MANAGEMENT</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Image</a></li>
+            <li><a href="/upload">Text</a></li>
+            <li><a href="/visuals">Visualize</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/login">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="background">
+      <img src="https://images.pexels.com/photos/164527/pexels-photo-164527.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+
+    </div>
+    <div class="formcontainer">
+      <div class="imagecontainer">
+        <img
+          id="preview"
+          src="#"
+          alt="Please select image"
+          width="300"
+          height="300"
+          style="display: none;"
+        />
+      </div>
+      <div class="form">
+        <form>
+          <div class="form-group">
+            <label for="invoice"><h2>Upload Your Bill</h2></label>
+            <input
+              type="file"
+              id="invoice"
+              accept="image/*"
+              onchange="displayImage()"
+            />
+          </div>
+          <div id="result" class="result"></div>
+         </form>
+        <div class="status">
+            
+        </div>
+      </div>
+      
+    </div>
+
+  </body>
+</html>

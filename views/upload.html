@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+    <link rel="stylesheet" href="/login.css" />
+    <script src="requestor.js"></script>
+    <script src="uploadtxt.js"></script>
+    <title>Text</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse" style="background-color: #385c85">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            class="navbar-toggle"
+            type="button"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          ></button>
+            <span class="icon-bar"></span><span class="icon-bar"></span
+            ><span class="icon-bar"></span>
+          </button>
+        </div>
+        <a class="navbar-brand" href="#">EXPENDITURE MANAGEMENT</a>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li ><a href="/">Image</a></li>
+                <li class="active" ><a href="#">Text</a></li>
+                <li><a href="/visuals">Visualize</a></li>
+                <li><a href="/about">About us</a></li>
+                <li><a href="/login">Logout</a></li>
+              </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="background">
+      <img src="https://images.pexels.com/photos/164527/pexels-photo-164527.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+
+    </div>
+    <div class="formcontainer">
+      <form id="upload-form" >
+        <h2 id="heading">Enter Here</h2>
+        
+        <h5 id="notify"></h5>
+        <div class="form-group">
+            
+          <div class="row">
+            <label for="title">Title :</label>
+            <input
+              type="text"
+              id="title"
+              name="title"
+            />
+          </div>
+          <div class="row">
+            <label for="amount">Amount:</label>
+            <input
+              type="number"
+              id="amount"
+              name="amount"
+            />
+          </div>
+        </div>
+        <input form="upload-form" type="button" value="Submit" id="upldSub" />
+      </form>
+    </div>
+  </body>
+</html>
