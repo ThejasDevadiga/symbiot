@@ -18,7 +18,7 @@ const loadData = async(body,url,method)=>{
   var raw = JSON.stringify({ 
     Name:"user1",
     });
-  const billData =await  loadData(raw,"http://localhost:5000/data","GET");
+  const billData =await  loadData(raw,"http://localhost:8000/data","GET");
  console.log(billData);
  
  

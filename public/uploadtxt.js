@@ -18,7 +18,7 @@ window.addEventListener("load", () => {
         name: "user1",
         Date: Date(),
       }),
-      "http://localhost:5000/uploadtext"
+      "http://localhost:8000/uploadtext"
     );
 
     if (result) {

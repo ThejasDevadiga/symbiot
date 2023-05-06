@@ -8,7 +8,7 @@ window.addEventListener("load",async()=>{
       
         labels: ['27 Apr', '28 Apr', '29 Apr', '30 Apr', '01 May', '02 May','03 May', '04 May', '05 May', '06 May'],
         datasets: [{
-          label: 'Income amount',
+          label: 'Total Income',
           data: [3500,2500,6080,9020,2000,1000,5030,9020,3010,4202],
           borderWidth: 1,
         //   borderColor: 'blue',
@@ -50,7 +50,7 @@ window.addEventListener("load",async()=>{
     var raw = JSON.stringify({ 
       Name:"user1",
       });
-    const billData =await  loadData(raw,"http://localhost:5000/bills","GET");
+    const billData =await  loadData(raw,"http://localhost:8000/bills","GET");
    console.log(billData);
 
    const startDate = new Date("2023-05-01T00:00:00.000Z");

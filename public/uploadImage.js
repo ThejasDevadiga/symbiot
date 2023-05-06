@@ -38,7 +38,7 @@ function displayImage() {
           const id = url.replace("https://res.cloudinary.com/acahscollege/image/upload/","")
             var result = await requestor(
             "get",null,
-            "http://localhost:5000/extractText/"+id
+            "http://localhost:8000/extractText/"+id
           );
           
           if(result){

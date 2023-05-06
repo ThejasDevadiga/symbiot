@@ -7,7 +7,7 @@ const Tesseract = require("tesseract.js");
 const GenerateId = require("./src/utils/generateId");
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect('mongodb+srv://acahscollege:acahsMongoDb15@acahs.nszkg5f.mongodb.net/ACAHSDATA?retryWrites=true&w=majority', {
+    const conn = await mongoose.connect('mongodb://localhost:27017/symbiot', {
       useUnifiedTopology: true,
       useNewUrlParser: true,
     });
@@ -18,6 +18,7 @@ const connectDB = async () => {
     process.exit();
   }
 };
+
 const errorHandler = (err, req, res, next) => {
   const statusCode = res.statusCode === 200 ? 400 : res.statusCode;
   console.log(err.message);
