@@ -4,9 +4,9 @@
   "description": "a validator system",
   "main": "server.js",
   "scripts": {
-    "start":"nodemon server.js",
+    "start":"nodemon /server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm install"
+    "build": "npm install && npm start"
   },
   
   "repository": {
