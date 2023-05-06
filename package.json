@@ -6,8 +6,9 @@
   "scripts": {
     "start":"nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm start"
+    "build": "npm install"
   },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ThejasDevadiga/HacktoFuture.git"
