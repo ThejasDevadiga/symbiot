@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="/login.css" />
     <script src="requestor.js"></script>
     <script src="uploadtxt.js"></script>
-    <title>Text</title>
+    <title>MANUAL</title>
   </head>
   <body>
     <nav class="navbar navbar-inverse" style="background-color: #385c85">
@@ -59,12 +59,19 @@
 
     </div>
     <div class="formcontainer">
+      <h2 id="heading">Enter Here</h2>
+      
+      <h5 id="notify"></h5>
       <form id="upload-form" >
-        <h2 id="heading">Enter Here</h2>
-        
-        <h5 id="notify"></h5>
         <div class="form-group">
-            
+          <div class="row">
+            <label for="date">Date :</label>
+            <input
+              type="date"
+              id="date"
+              name="date"
+            />
+          </div>  
           <div class="row">
             <label for="title">Title :</label>
             <input
@@ -81,8 +88,8 @@
               name="amount"
             />
           </div>
+            <input form="upload-form" type="button" value="Submit" id="upldSub" />
         </div>
-        <input form="upload-form" type="button" value="Submit" id="upldSub" />
       </form>
     </div>
   </body>

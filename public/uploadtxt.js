@@ -3,6 +3,8 @@ window.addEventListener("load", () => {
   Loginform.addEventListener("click", async () => {
     const title = document.getElementById("title").value;
     const amount = document.getElementById("amount").value;
+    const date = document.getElementById("date").value;
+    
     // var  actamount = amount
     // if(title!='income' || title !='profit'){
     //  var  actamount = (-1) *(amount)
@@ -16,7 +18,7 @@ window.addEventListener("load", () => {
         title: title,
         amount: amount,
         name: "user1",
-        Date: Date(),
+        Date:date,
       }),
       "http://localhost:8000/uploadtext"
     );
